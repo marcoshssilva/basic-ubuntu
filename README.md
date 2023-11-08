@@ -10,6 +10,17 @@ Source image from ubuntu with some softwares:
 - wget, curl -> download files or make HTTP requests
 - openssh-client -> connect to another machine, vm or container
 
+## Pull Image
+
+**ARM64**
+```
+docker pull app-nx.marcoshssilva.com.br/arm64/basic-ubuntu:latest
+```
+
+**AMD64**
+```
+docker pull app-nx.marcoshssilva.com.br/amd64/basic-ubuntu:latest
+```
 
 ## How to run
 
