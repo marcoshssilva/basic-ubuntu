@@ -13,10 +13,16 @@ Source image from ubuntu with some softwares:
 
 ## How to run
 
-Run:
+Make up instance:
 ```
 chmod +x ./build-image.sh
 ./build-image.sh
 docker run -it --name ubuntu-with-tools marcoshssilva/basic-ubuntu
+
+```
+
+Access container as user 'ubuntu':
+```
 docker exec -it $CONTAINER_ID$ /bin/bash
 ```
+> $CONTAINER_ID$ is container id, use docker container ps to view
