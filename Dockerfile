@@ -9,7 +9,8 @@ RUN apt-get install -y git tree zip unzip tar gzip wget curl net-tools openssh-c
 RUN apt-get install -y mysql-client postgresql-client
 RUN apt-get install -y nano vim
 RUN apt-get install -y iputils-ping
-RUN apt-get install -y rar unrar
+
+# RUN apt-get install -y rar unrar
 
 RUN useradd -m ubuntu
 RUN echo 'ubuntu:ubuntu' | chpasswd
