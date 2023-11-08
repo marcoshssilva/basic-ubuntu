@@ -9,3 +9,14 @@ Source image from ubuntu with some softwares:
 - mysql-client postgresql-client -> connect to SQL databases
 - wget, curl -> download files or make HTTP requests
 - openssh-client -> connect to another machine, vm or container
+
+
+## How to run
+
+Run:
+```
+chmod +x ./build-image.sh
+./build-image.sh
+docker run -it --name ubuntu-with-tools marcoshssilva/basic-ubuntu
+docker exec -it $CONTAINER_ID$ /bin/bash
+```
