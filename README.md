@@ -1,4 +1,4 @@
-# marcoshssilva/basic-ubuntu
+# marcoshssilva/ubuntu-with-tools
 
 Source image from ubuntu with some softwares:
 
