@@ -17,6 +17,7 @@ docker buildx build --platform linux/amd64,linux/arm64,linux/ppc64le,linux/s390x
 
 ## Pull Image
 
+Arch's
 **ARM64**
 **AMD64**
 **PPC64LE**
