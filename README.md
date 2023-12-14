@@ -1,4 +1,4 @@
-# marcoshssilva/ubuntu-with-tools
+# Ubuntu-With-Tools
 
 Source image from ubuntu with some softwares:
 
@@ -10,16 +10,19 @@ Source image from ubuntu with some softwares:
 - wget, curl -> download files or make HTTP requests
 - openssh-client -> connect to another machine, vm or container
 
+## Build image to multi-arch with Docker Buildx
+```
+docker buildx build --platform linux/amd64,linux/arm64,linux/ppc64le,linux/s390x --tag marcoshssilvadev/ubuntu-with-tools:latest .
+```
+
 ## Pull Image
 
 **ARM64**
-```
-docker pull app-nx.marcoshssilva.com.br/arm64/basic-ubuntu:latest
-```
-
 **AMD64**
+**PPC64LE**
+**S390X**
 ```
-docker pull app-nx.marcoshssilva.com.br/amd64/basic-ubuntu:latest
+docker pull marcoshssilvadev/ubuntu-with-tools:latest
 ```
 
 ## How to run
@@ -28,7 +31,7 @@ Make up instance:
 ```
 chmod +x ./build-image.sh
 ./build-image.sh
-docker run -it --name ubuntu-with-tools marcoshssilva/basic-ubuntu
+docker run -it --name ubuntu-with-tools marcoshssilvadev/ubuntu-with-tools:latest
 
 ```
 

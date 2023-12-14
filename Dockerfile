@@ -1,4 +1,4 @@
-FROM ubuntu:latest
+FROM ubuntu:mantic
 
 USER root
 
@@ -12,7 +12,7 @@ RUN apt-get install -y iputils-ping
 
 # RUN apt-get install -y rar unrar
 
-RUN useradd -m ubuntu
+#RUN useradd -m ubuntu
 RUN echo 'ubuntu:ubuntu' | chpasswd
 
 USER ubuntu

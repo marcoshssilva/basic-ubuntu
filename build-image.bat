@@ -1,1 +1,1 @@
-docker build -t marcoshssilva/basic-ubuntu .
+docker build -t marcoshssilvadev/ubuntu-with-tools .
