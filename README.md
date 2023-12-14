@@ -10,11 +10,6 @@ Source image from ubuntu with some softwares:
 - wget, curl -> download files or make HTTP requests
 - openssh-client -> connect to another machine, vm or container
 
-## Build image to multi-arch with Docker Buildx
-```
-docker buildx build --platform linux/amd64,linux/arm64,linux/ppc64le,linux/s390x --tag marcoshssilvadev/ubuntu-with-tools:latest .
-```
-
 ## Pull Image
 
 Arch's
@@ -24,6 +19,11 @@ Arch's
 **S390X**
 ```
 docker pull marcoshssilvadev/ubuntu-with-tools:latest
+```
+
+## Build image to multi-arch with Docker Buildx
+```
+docker buildx build --platform linux/amd64,linux/arm64,linux/ppc64le,linux/s390x --tag marcoshssilvadev/ubuntu-with-tools:latest .
 ```
 
 ## How to run
