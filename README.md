@@ -30,8 +30,7 @@ docker buildx build --platform linux/amd64,linux/arm64,linux/ppc64le,linux/s390x
 
 Make up instance:
 ```
-chmod +x ./build-image.sh
-./build-image.sh
+docker build -t marcoshssilvadev/ubuntu-with-tools .
 docker run -it --name ubuntu-with-tools marcoshssilvadev/ubuntu-with-tools:latest
 
 ```
