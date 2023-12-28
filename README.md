@@ -32,7 +32,6 @@ Make up instance:
 ```
 docker build -t marcoshssilvadev/ubuntu-with-tools .
 docker run -it --name ubuntu-with-tools marcoshssilvadev/ubuntu-with-tools:latest
-
 ```
 
 Access container as user 'ubuntu':
