@@ -1,0 +1,6 @@
+version: '3.8'
+services:
+  ubuntu:
+    image: marcoshssilva/ubuntu-with-tools
+    ports:
+      - 2222:22
