@@ -26,7 +26,7 @@ RUN add-apt-repository \
 
 # Install additional packages
 RUN apt-get install gnupg -y
-RUN apt-get install -y git tree zip unzip tar gzip wget curl net-tools openssh-client telnet nano vim iputils-ping
+RUN apt-get install -y systemd git tree zip unzip tar gzip wget curl net-tools openssh-client telnet nano vim iputils-ping
 
 # Create a user 'ubuntu' and set password
 # RUN useradd -m ubuntu
