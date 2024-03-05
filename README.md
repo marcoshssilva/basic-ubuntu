@@ -4,7 +4,7 @@ Source image from ubuntu with some softwares:
 
 - git -> clone repositories git
 - vim and nano -> edit files
-- zip, unzip, tar, gzip, rar, unrar -> compress and uncompress files
+- zip, unzip, tar, gzip -> compress and uncompress files
 - ping, telnet, net-tools -> inspect networks and ips
 - wget, curl -> download files or make HTTP requests
 - openssh-client -> connect to another machine, vm or container
@@ -35,3 +35,15 @@ Access container as user 'ubuntu':
 docker exec -it $CONTAINER_ID$ /bin/bash
 ```
 > $CONTAINER_ID$ is container id, use docker container ps to view
+
+## Run using Docker compose:
+
+Create a file `docker-compose.yaml` with something like this and execute `docker compose up`:
+```
+version: '3.8'
+services:
+  ubuntu:
+    image: marcoshssilva/ubuntu-with-tools
+    ports:
+      - 22:22
+```
