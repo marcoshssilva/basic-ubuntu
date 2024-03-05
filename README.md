@@ -15,23 +15,20 @@ Source image from ubuntu with some softwares:
 Arch's
 **ARM64**
 **AMD64**
-**PPC64LE**
-**S390X**
 ```
-docker pull marcoshssilvadev/ubuntu-with-tools:latest
+docker pull marcoshssilva/ubuntu-with-tools:latest
 ```
 
 ## Build image to multi-arch with Docker Buildx
 ```
-docker buildx build --platform linux/amd64,linux/arm64,linux/ppc64le,linux/s390x --tag marcoshssilvadev/ubuntu-with-tools:latest .
+docker buildx build --platform linux/amd64,linux/arm64 --tag marcoshssilva/ubuntu-with-tools:latest .
 ```
 
 ## How to run
 
 Make up instance:
 ```
-docker build -t marcoshssilvadev/ubuntu-with-tools .
-docker run -it --name ubuntu-with-tools marcoshssilvadev/ubuntu-with-tools:latest
+docker run -it --name ubuntu-with-tools marcoshssilva/ubuntu-with-tools:latest
 ```
 
 Access container as user 'ubuntu':
